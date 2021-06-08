@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashscreen"
+    tools:context=".onboarding.intro.OnboardingActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:id="@+id/view_model_sheet"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/modalbottomsheet"
+        android:layout_alignParentBottom="true"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/view_model_sheet"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_app_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name1"
+            android:textColor="@color/blue_font"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:id="@+id/tv_app_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name2"
+            android:layout_toEndOf="@+id/tv_app_name1"
+            android:textColor="@color/dark_blue_font"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="32sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/indicators_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_app_name"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/indicators_container"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp">
+
+        <com.example.capstoneproject.utils.customButtons.WhiteButtons
+            android:id="@+id/btn_skip"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:text="@string/skip_string"/>
+
+        <com.example.capstoneproject.utils.customButtons.BlueButtons
+            android:id="@+id/btn_next"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@+id/btn_skip"
+            android:layout_marginStart="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

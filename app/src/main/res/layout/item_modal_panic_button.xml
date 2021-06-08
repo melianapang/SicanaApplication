@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:id="@+id/bottomSheetContainer"
+    android:background="@drawable/modalbottomsheet"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageButton
+        android:id="@+id/rectangle_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rectangle_top"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/panic_button"/>
+
+    <TextView
+        android:id="@+id/tv_title_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/panic_button"
+        android:textColor="@color/blue_font"
+        android:textSize="25sp"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rectangle_top" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_mic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_baseline_mic_24"
+        android:contentDescription="@string/mic_button"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/title_subtitle"
+        android:textColor="@color/light_blue_subtitle_font"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn_mic"
+        app:layout_constraintEnd_toEndOf="@id/imgBtn_mic"
+        app:layout_constraintStart_toStartOf="@id/imgBtn_mic"/>
+
+    <com.example.capstoneproject.utils.customSpinner.CustomSpinner
+        android:id="@+id/spinner_disaster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingBottom="5dp"
+        android:dropDownVerticalOffset="20dp"
+        android:background="@drawable/spinner_bg"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/tv_subtitle"
+        app:layout_constraintStart_toStartOf="@id/tv_subtitle"
+        android:elevation="8dp"/>
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/background_textview"
+        android:autofillHints="@string/hint_description"
+        android:inputType="textCapSentences|textMultiLine"
+        android:scrollHorizontally="false"
+        android:maxLines="4"
+        android:lines="4"
+        android:gravity="start|end"
+        android:maxLength ="100"
+        android:textColor="@color/blue_buttons"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_disaster"
+        app:layout_constraintEnd_toEndOf="@id/spinner_disaster"
+        app:layout_constraintStart_toStartOf="@id/spinner_disaster"
+        android:elevation="8dp"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/blue_button"
+        android:text="@string/title_button_kirim"
+        app:layout_constraintTop_toBottomOf="@id/edit_description"
+        app:layout_constraintEnd_toEndOf="@id/edit_description"
+        app:layout_constraintStart_toStartOf="@id/edit_description"
+        android:elevation="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailnotification.DetailNotificationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_chevron_left_24"
+                android:contentDescription="@string/back_string"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppinssemibold"
+                android:gravity="center"
+                android:text="@string/title_detail_notification"
+                android:textAlignment="center"
+                android:textColor="@color/blue_font"
+                android:textSize="20sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp">
+
+            <TextView
+                android:id="@+id/tv_date_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/title_date"
+                android:textColor="@color/blue_buttons"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_content_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_date_title"
+                android:background="@drawable/background_textview"
+                android:fontFamily="@font/poppinsregular"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/blue_buttons"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_judul_notification_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content_date"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/title_judul_notification"
+                android:textColor="@color/blue_buttons"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_content_judul_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_judul_notification_title"
+                android:background="@drawable/background_textview"
+                android:fontFamily="@font/poppinsregular"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="3"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/blue_buttons"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_notification_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content_judul_notification"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/title_judul_notification"
+                android:textColor="@color/blue_buttons"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_content_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_notification_title"
+                android:background="@drawable/background_textview"
+                android:fontFamily="@font/poppinsregular"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines="10"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:scrollbars="none"
+                android:textColor="@color/blue_buttons"
+                android:textSize="15sp" />
+
+            <com.example.capstoneproject.utils.customButtons.BlueButtons
+                android:id="@+id/btn_regist_for_volunteer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content_notification"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/title_regist_for_volunteer"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.capstoneproject">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:name=".MyApplication"
+        android:icon="@drawable/sicana_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sicana_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CapstoneProject">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".splash.SplashScreenActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".main.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".detailnotification.DetailNotificationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".detailnotification.registerVolunteer.RegisForVolunteerNewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".editprofile.EditProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".onboarding.intro.OnboardingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".onboarding.registration.RegistrationActivity"
+        android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

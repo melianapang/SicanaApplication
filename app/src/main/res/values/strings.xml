@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">SiCana</string>
+    <string name="app_name1">Si</string>
+    <string name="app_name2">Cana</string>
+    <string name="made_by">Dibuat oleh DEWA21</string>
+    <string name="motto_app">Sigap, Tanggap, Bantu Sesama.</string>
+
+    <string name="title_dashboard">Data</string>
+    <string name="title_notification">Berita</string>
+    <string name="title_detail_notification">Detail Berita</string>
+    <string name="title_profile">Profil</string>
+    <string name="back_string">Kembali</string>
+
+    //News fragment
+    <string name="notification_tab">Notifikasi</string>
+    <string name="regist_tab">Pendaftaran</string>
+    <string name="title_regist">Daftar</string>
+    <string name="title_news">Judul Berita</string>
+    <string name="title_desc">Deskripsi Berita</string>
+    <string name="approval_check">Saya setuju atas semua konsekuensi saat menjadi relawan Sicana.</string>
+    <string name="approval_check_is_not_checked">Anda belum menyetujui keputusan atas konsekuensi menjadi relawan Sicana</string>
+    <string name="regis_volunteer_success">Selamat, Anda berhasil mendaftar sebagai relawan Sicana.</string>
+
+    //Profile fragment
+    <string name="edit">Edit</string>
+    <string name="log_out">Keluar</string>
+    <string name="save">Simpan</string>
+    <string name="title_edit_profile">Edit Profil</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Nomor Telepon</string>
+    <string name="title_log_out">Keluar</string>
+    <string name="title_subtitle_log_out">Anda yakin ingin keluar?</string>
+    <string name="yes_string">Ya</string>
+    <string name="no_string">Tidak</string>
+    <string name="empty_field">Tolong mengisi semua informasi.</string>
+    <string name="wrong_format_email">Tolong masukkan format email yang benar</string>
+
+    //Dashboard fragment
+    <string name="title_button_report">Laporkan Kejadian</string>
+    <string name="title_button_kirim">Kirim</string>
+    <string name="title_your_location">Lokasi Anda</string>
+    <string name="title_subtitle">Gunakan tombol ini untuk memberitahu kami, agar kami dapat segera membantu anda.</string>
+    <string name="permission_denied">Ijin ditolak.</string>
+    <string name="mic_button">Tombol Mikrofon</string>
+    <string name="panic_button">Panic Button</string>
+    <string name="hint_description">Cth : Ada kejadian tsunami di sulawesi selatan</string>
+    <string name="speech_recognation_not_available">Pengenal suara tidak tersedia.</string>
+    <string name="say_something_string">Katakan sesuatu</string>
+
+    //Detail Notification
+    <string name="title_date">Tanggal</string>
+    <string name="title_judul_notification">Judul Notifikasi</string>
+    <string name="title_regist_for_volunteer">Daftar sebagai relawan</string>
+
+    //Feedback Dialog
+    <string name="success_string">Success</string>
+    <string name="failed_string">Failed</string>
+    <string name="loading_striing">Sedang diproses...</string>
+    <string name="edit_profile_success">Selamat, anda berhasil menyunting akun anda</string>
+    <string name="failed_to_save_photo">"Gagal mengganti foto, mohon coba beberapa saat lagi"</string>
+    <string name="send_information_success">Terima kasih telah menginformasikan hal ini kepada kami</string>
+    <string name="send_information_failed">Maaf, anda gagal mengirimkan informasi. Mohon cek koneksi internet anda.</string>
+
+    //ONBOARDING
+    <string name="skip_string">Lewati</string>
+    <string name="next_string">Lanjutkan</string>
+    <string name="start_string">Mulai sekarang</string>
+
+    <string name="volunteer_string">Volunteer</string>
+    <string name="user_string">User</string>
+
+    //SignIn
+    <string name="title_log_in">Masuk</string>
+    <string name="phone_title">Nomor Telepon</string>
+    <string name="hint_phone_number">8123XXXXXXX</string>
+    <string name="privacy_check">Saya telah membaca dan setuju mengenai Kebijakan Pribadi dan Kondisi</string>
+    <string name="privacy_check_is_not_checked">Anda belum menyetujui Kebijakan Pribadi dan Kondisi</string>
+
+    //Verification
+    <string name="title_verification">Verifikasi</string>
+    <string name="subtitle_verification">Sunting informasi anda dibawah ini untuk melakukan pendaftaran</string>
+    <string name="title_otp">Kode OTP</string>
+    <string name="subtitle_otp">Mohon ketikkan Kode OTP yang dikirim melalui SMS dengan nomor telepon +62 %s</string>
+    <string name="verify_string">Periksa</string>
+    <string name="phone_62">+62</string>
+    <string name="resend_string">Kirim ulang</string>
+    <string name="ask_resend_string">Tidak mendapat SMS kode OTP?</string>
+    <string name="field_empty">Tolong isi semua informasi</string>
+    <string name="logged_in_as">Anda berhasil masuk sebagai %s </string>
+    <string name="sign_in_failed">Maaf, kode verifikasi yang anda masukkan salah</string>
+
+</resources>

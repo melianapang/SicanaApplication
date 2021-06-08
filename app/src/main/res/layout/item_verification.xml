@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp">
+
+    <TextView
+        android:id="@+id/tv_title_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:gravity="center"
+        android:text="@string/title_verification"
+        android:textAlignment="center"
+        android:textColor="@color/blue_font"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_verification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_verification"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/subtitle_verification"
+        android:textAlignment="center"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_subtitle_verification"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/phone_title"
+        android:textColor="@color/blue_buttons"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_phone_title"
+        android:background="@drawable/background_textview"
+        android:fontFamily="@font/poppinsregular"
+        android:hint="@string/hint_phone_number"
+        android:inputType="phone"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/blue_buttons"
+        android:textSize="15sp" />
+
+    <com.example.capstoneproject.utils.customButtons.BlueButtons
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_phone"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="@string/skip_string"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_made_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_next"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="@string/made_by"
+        android:textColor="@color/blue_font"
+        android:textSize="12sp" />
+</RelativeLayout>

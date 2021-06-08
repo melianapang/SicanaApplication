@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_blue_font">#2C4B69</color>
+    <color name="light_blue_subtitle_font">#378ADE</color>
+    <color name="light_blue_textview">#E7F0FF</color>
+</resources>
